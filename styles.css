@@ -24,6 +24,7 @@ p {
   position: absolute;
   width: 100%;
   background-color: #0000007a;
+  z-index: 999;
 }
 .navbar-expand-lg .navbar-nav {
   margin: auto;
@@ -39,7 +40,6 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   top: 0;
-  z-index: -10;
 }
 .home_main .container h3 {
   margin-top: 201px;
@@ -76,9 +76,10 @@ p {
   color: white;
   text-decoration: none;
   border: 2px solid rgba(255, 255, 255, 0);
+  transition: 0.5s ease-in-out;
 }
-.socials a:hover span {
-  border-bottom: 2px solid white;
+.socials a:hover {
+  color: #4343e8 !important;
 }
 .section2 {
   padding-top: 81px;
@@ -140,7 +141,7 @@ p {
   padding: 33px;
   text-align: center;
   flex-direction: column;
-  background-color: #ffcc05;
+  background-color: #ffdc48;
 }
 .circle-box h2 {
   color: white;
@@ -348,7 +349,7 @@ p {
 }
 .card-heading h4 {
   text-transform: uppercase;
-  font-size: 27px;
+  font-size: 24px;
   color: gray;
 }
 .card-btn {
@@ -369,9 +370,9 @@ p {
   color: gray;
 }
 .section8 .container {
-  background: radial-gradient( circle at 18.7% 37.8%, #fff9e2 0%, #fff3c6 90% );
-    box-shadow: 0 4px 10px rgb(0 0 0 / 8%);
-    border-radius: 20px;
+  background-color: #fff9ea;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 8%);
+  border-radius: 20px;
 }
 .features {
   display: flex;
@@ -497,6 +498,7 @@ p {
   background-color: #0000004b;
   opacity: 0;
   top: 0;
+  transition: 0.5s ease-in-out;
 }
 .small_image > div:hover .image-overlay {
   opacity: 1;
@@ -1159,11 +1161,11 @@ textarea {
   }
 }
 footer {
-  background-color: #000;
+  background: linear-gradient(90deg,#ffc883 0,#ffd200 100%);
 }
 .upper_footer {
   width: 100%;
-  background: black;
+  background: linear-gradient(90deg,#ffc883 0,#ffd200 100%);
   color: white;
   display: flex;
   flex-direction: column;
@@ -1185,7 +1187,7 @@ footer {
 }
 .nav_point div a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 .footer_icon {
@@ -1194,17 +1196,17 @@ footer {
 .footer_icon > div {
   width: 40px;
   height: 40px;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 50%;
   padding: 8px;
   margin: 10px;
 }
 .footer_icon > div a {
-  color: white;
+  color: black;
 }
 .bottom_footer {
   width: 100%;
-  color: white;
+  color: black;
   text-align: center;
   font-weight: 600;
   padding-bottom: 15px;
