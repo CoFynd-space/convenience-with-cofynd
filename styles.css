@@ -467,13 +467,9 @@ p {
   font-size: 14px !important;
 }
 .section12 {
-  /* background-color: #f9f9f9; */
   padding: 200px 42px 93px;
   height: 430px;
 }
-/* .section12 .container {
-  background-image: url('./bg3.jpg');
-} */
 .carousel-item {
   width: 56%;
   margin: auto;
@@ -1160,11 +1156,10 @@ textarea {
   }
 }
 footer {
-  background: linear-gradient(90deg,#ffc883 0,#ffd200 100%);
+  background: #222;
 }
 .upper_footer {
   width: 100%;
-  background: linear-gradient(90deg,#ffc883 0,#ffd200 100%);
   color: white;
   display: flex;
   flex-direction: column;
@@ -1186,7 +1181,7 @@ footer {
 }
 .nav_point div a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 .footer_icon {
@@ -1195,17 +1190,17 @@ footer {
 .footer_icon > div {
   width: 40px;
   height: 40px;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 50%;
   padding: 8px;
   margin: 10px;
 }
 .footer_icon > div a {
-  color: black;
+  color: white;
 }
 .bottom_footer {
   width: 100%;
-  color: black;
+  color: white;
   text-align: center;
   font-weight: 600;
   padding-bottom: 15px;
@@ -1328,19 +1323,6 @@ footer {
   }
   .section4 {
     padding: 13px 0;
-  }
-  .section5-lBox {
-    text-align: center;
-  }
-  .section5-rBox {
-    text-align: center;
-  }
-  .section51 {
-    padding: 35px 0;
-  }
-  .about {
-    padding: 12px 36px;
-    font-size: 12px;
   }
   .scroll-facility {
     overflow-x: scroll;
