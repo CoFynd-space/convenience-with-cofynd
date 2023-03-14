@@ -119,12 +119,13 @@ p {
 }
 .right-box-inner img {
   width: 100%;
+  border-radius: 20px;
 }
 .right-box-inner h2 {
   font-size: 28px;
 }
 .right-box-inner h2 span {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   color: black;
 }
@@ -133,10 +134,10 @@ p {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
-  top: 43px;
+  top: 109px;
   left: -150px;
   padding: 33px;
   text-align: center;
@@ -165,6 +166,7 @@ p {
 .img-box img {
   width: 50vw;
   height: 100vh;
+  border-radius: 0 0px 200px;
 }
 .list {
   display: flex;
@@ -272,19 +274,24 @@ p {
 }
 .scroll-facility {
   display: flex;
+  padding: 0 5px;
 }
 .facilities {
   width: 25%;
   position: relative;
   background-size: cover;
   cursor: pointer;
-  background: #05080d;
   z-index: 1;
   display: flex;
   justify-content: center;
+  margin: 10px;
+  height: 80%;
 }
 .facilities img {
   width: 100%;
+  border-radius: 20px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .text-over {
   position: absolute;
@@ -292,6 +299,9 @@ p {
   padding: 25px;
   text-align: center;
   bottom: 0;
+}
+.text-over h2 {
+  font-size: 22px !important;
 }
 .section7 {
   background-color: transparent;
@@ -315,6 +325,8 @@ p {
   position: relative;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
+  border-radius: 20px;
 }
 .w-30 {
   min-width: 30%;
@@ -328,7 +340,7 @@ p {
 .price-box {
   width: 148px;
   margin: auto;
-  background-color: #4343E8;
+  background-color: #4343e8;
   font-size: 19px;
   font-weight: 600;
   color: white;
@@ -336,9 +348,10 @@ p {
   justify-content: center;
   align-items: center;
   height: 40px;
+  border-radius: 0 0 5px 5px;
 }
 .card-btn:hover {
-  background-color: #4343E8;
+  background-color: #4343e8;
 }
 .card-heading {
   text-align: center;
@@ -354,8 +367,8 @@ p {
 }
 .card-btn {
   background-color: #fff;
-  border: 1px solid #4343E8 !important;
-  color: #4343E8 !important;
+  border: 1px solid #4343e8 !important;
+  color: #4343e8 !important;
   font-weight: 600;
   margin: auto;
   margin-bottom: 32px;
@@ -543,6 +556,21 @@ p {
   display: inline-block;
   width: 100%;
   border-bottom: 1px solid #6d6d6d;
+}
+.custom-select {
+  border: none;
+  padding: 0.375rem 1.75rem 0.375rem 0;
+  color: gray;
+  background: #fff url("./contact-form-icons/Down_Arrow.svg") no-repeat right
+    0.75rem center;
+  background-size: 8px 10px;
+}
+.custom-select option {
+  margin-top: 12px;
+}
+.custom-select:focus {
+  border-color: transparent;
+  box-shadow: none;
 }
 .style-input input,
 textarea {
@@ -1207,7 +1235,7 @@ footer {
   font-size: 13px;
 }
 .cwrkng {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .btn-hide {
   display: none;
@@ -1281,8 +1309,8 @@ footer {
   }
   .circle-box {
     position: unset;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
   .right-box-inner h2 {
     font-size: 21px;
@@ -1298,7 +1326,7 @@ footer {
     padding-right: 0 !important;
   }
   .right-box-inner h2 span {
-    font-size: 27px;
+    font-size: 22px;
   }
   .img-box {
     display: none;
