@@ -1313,14 +1313,14 @@ footer {
     width: 103px;
   }
   .main {
-    height: 83vh !important;
+    height: 73vh !important;
   }
   .home_main {
     right: 0;
     left: 0;
     top: 0;
     z-index: -2;
-    height: 78vh;
+    height: 67vh;
   }
   .nav-link {
     text-align: center;
@@ -1353,10 +1353,11 @@ footer {
   }
   .right-box-inner {
     right: 0;
-    margin-top: 100px;
+    margin-top: 72px;
   }
   .section2 {
     padding-top: 0;
+    padding-bottom: 46px;
   }
   .right-box {
     margin-bottom: 10px !important;
@@ -1500,6 +1501,10 @@ footer {
 
   .section11 {
     padding: 36px 0;
+  }
+  .section11 .container {
+    position: relative;
+    z-index: 5;
   }
   .section11-cards {
     overflow-x: scroll;
