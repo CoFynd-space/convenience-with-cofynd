@@ -1326,7 +1326,7 @@ footer {
     text-align: center;
   }
   .home_main .container h3 {
-    margin-top: 139px;
+    margin-top: 205px;
     font-size: 20px;
   }
   .main-heading {
@@ -1498,7 +1498,9 @@ footer {
   .counter-box {
     width: 23%;
   }
-
+  .text-over h2 {
+    font-size: 18px !important;
+  }
   .section11 {
     padding: 36px 0;
   }
