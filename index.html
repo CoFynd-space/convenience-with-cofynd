@@ -585,29 +585,34 @@
       <section class="image_section">
         <div class="small_image">
           <div>
-            <img src="./Cwc/Cwc/gallery/3.jpg" />
-            <div class="image-overlay"></div>
+            <img id="1" class="img01" onclick="bigImage(event)" src="./Cwc/Cwc/gallery/3.jpg" />
+            <!-- <div class="image-overlay"></div> -->
           </div>
           <div>
-            <img src="./Cwc/Cwc/gallery/5.jpg" />
-            <div class="image-overlay"></div>
+            <img id="2" class="img01" onclick="bigImage(event)" src="./Cwc/Cwc/gallery/5.jpg" />
+            <!-- <div class="image-overlay"></div> -->
           </div>
           <div>
-            <img src="./Cwc/Cwc/gallery/2.jpg" />
-            <div class="image-overlay"></div>
+            <img id="3" class="img01" onclick="bigImage(event)" src="./Cwc/Cwc/gallery/2.jpg" />
+            <!-- <div class="image-overlay"></div> -->
           </div>
           <div>
-            <img src="./Cwc/Cwc/gallery/6.jpg" />
-            <div class="image-overlay"></div>
+            <img id="4" class="img01" onclick="bigImage(event)" src="./Cwc/Cwc/gallery/6.jpg" />
+            <!-- <div class="image-overlay"></div> -->
           </div>
           <div>
-            <img src="./Cwc/Cwc/gallery/4.jpg" />
-            <div class="image-overlay"></div>
+            <img id="5" class="img01" onclick="bigImage(event)" src="./Cwc/Cwc/gallery/4.jpg" />
+            <!-- <div class="image-overlay"></div> -->
           </div>
           <div>
-            <img src="./Cwc/Cwc/gallery/1.jpg" />
-            <div class="image-overlay"></div>
+            <img id="6" class="img01" onclick="bigImage(event)" src="./Cwc/Cwc/gallery/1.jpg" />
+            <!-- <div class="image-overlay"></div> -->
           </div>
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img src="" class="modal-content" id="img011">
+          <!-- <div id="caption"></div> -->
         </div>
       </section>
       <div class="container contact-form">
@@ -660,7 +665,7 @@
                     <span class="style-input">
                       <select class="custom-select" id="inputGroupSelect01">
                         <option selected>No. Of Seats</option>
-                        <option value="1">1-10</option>
+                        <option style="margin: 10px !important" value="1">1-10</option>
                         <option value="2">11-20</option>
                         <option value="3">21-50</option>
                         <option value="4">51-100</option>

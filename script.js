@@ -146,3 +146,23 @@ testim.addEventListener("touchend", function (e) {
 // current year in footer
 var myYear = new Date().getFullYear();
 document.getElementById('current-year').innerHTML = myYear;
+
+// modal image
+var modal = document.getElementById("myModal");
+
+var img = document.querySelectorAll(".img01");
+console.log(img)
+var modalImg = document.getElementById("img011");
+console.log(modalImg)
+function bigImage(event) {
+  modal.style.display = "block";
+  modalImg.src = event.target.src;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}

@@ -466,8 +466,12 @@ p {
   justify-content: space-between;
   margin-top: 34px;
 }
+.img-box-card {
+  padding: 10px;
+}
 .img-box-card img {
   width: 100%;
+  border-radius: 20px;
 }
 .section11-details {
   margin-top: 20px;
@@ -493,6 +497,58 @@ p {
   align-items: center;
   width: 100%;
 }
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 33%;
+  max-width: 700px;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .small_image > div {
   width: 16.66%;
   position: relative;
@@ -560,14 +616,14 @@ p {
 .custom-select {
   border: none;
   padding: 0.375rem 1.75rem 0.375rem 0;
-  color: gray;
+  color: #6d6d6d;
   background: #fff url("./contact-form-icons/Down_Arrow.svg") no-repeat right
     0.75rem center;
   background-size: 8px 10px;
+  font-size: 14px;
+  font-weight: 300;
 }
-.custom-select option {
-  margin-top: 12px;
-}
+
 .custom-select:focus {
   border-color: transparent;
   box-shadow: none;
@@ -580,8 +636,8 @@ textarea {
   line-height: 1.5em;
   border-color: transparent;
   outline: none;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 300;
   font-style: normal;
   text-decoration: none;
   text-transform: none;
@@ -1345,6 +1401,9 @@ footer {
   .aminities {
     margin: 16px 0;
   }
+  .aminities h6 {
+    font-size: 12px;
+  }
   .aminities img {
     width: 29px;
     height: 29px;
@@ -1377,6 +1436,7 @@ footer {
     overflow-x: scroll;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    padding-bottom: 14px;
   }
   .scroll-card::-webkit-scrollbar {
     display: none;
@@ -1407,6 +1467,13 @@ footer {
   .feature {
     min-width: 76%;
     margin-left: 10px;
+  }
+  .feature-details p {
+    font-size: 12px;
+  }
+  .slide img {
+    height: 72px;
+    width: 160px;
   }
   .section9 {
     height: 32vh;
@@ -1453,6 +1520,9 @@ footer {
   .small_image > div {
     min-width: 56.66%;
   }
+  .modal-content {
+    width: 100%;
+  }
   #left-arrow {
     left: 17px;
   }
@@ -1482,6 +1552,9 @@ footer {
   }
   .input1 {
     width: 100%;
+  }
+  .custom-select {
+    font-size: 12px;
   }
   .style-input {
     width: 100%;
